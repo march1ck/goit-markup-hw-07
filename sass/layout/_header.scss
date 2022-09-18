@@ -1,0 +1,86 @@
+.page-nav .menu-link.current {
+  color: var(--accent-color);
+}
+
+/* Header navigation */
+.menu {
+  display: flex;
+  column-gap: 50px;
+}
+.page-nav .menu-link {
+  position: relative;
+  color: var(--secondary-color-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  padding: 32px 0px;
+  transition: color var(--transition-dur-and-func);
+}
+.menu-link.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  transform: scaleX(1);
+  transition: transform var(--transition-dur-and-func);
+}
+.menu-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform var(--transition-dur-and-func);
+}
+.menu-link:hover::after,
+.menu-link:focus::after {
+  transform: scaleX(1);
+}
+.page-nav :hover,
+.page-nav :focus {
+  color: var(--accent-color);
+}
+.icon-mail {
+  display: flex;
+  align-items: center;
+  fill: currentColor;
+  margin-right: 10px;
+}
+.icon-tel {
+  display: flex;
+  fill: currentColor;
+  margin-right: 10px;
+}
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+  column-gap: 50px;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.auth-nav-link {
+  display: flex;
+  align-items: center;
+  padding: 32px 0px;
+  color: var(--primary-color-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  transition: color var(--transition-dur-and-func);
+}

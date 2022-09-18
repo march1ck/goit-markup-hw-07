@@ -1,0 +1,30 @@
+.section.about {
+  padding-top: 0px;
+}
+.examples {
+  display: flex;
+  column-gap: 30px;
+}
+.icon-example {
+  display: block;
+  max-width: 100%;
+}
+.image-text {
+  position: relative;
+}
+.over-text-works {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  width: 370px;
+  height: 70px;
+  text-transform: uppercase;
+  color: var(--hero-logo-text);
+  background: rgba(47, 48, 58, 0.8);
+}

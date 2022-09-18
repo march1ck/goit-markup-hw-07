@@ -1,0 +1,126 @@
+.footer {
+  background-color: var(--secondary-back-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  .logo {
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+}
+
+.logo-footer {
+  color: var(--hero-logo-text);
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.location {
+  color: var(--hero-logo-text);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  transition: color var(--transition-dur-and-func);
+}
+.contacts {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  transition: color var(--transition-dur-and-func);
+}
+.join-title {
+  color: var(--hero-logo-text);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.footer-social {
+  margin-left: 70px;
+}
+.footer-social-list {
+  display: flex;
+  column-gap: 10px;
+}
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--hero-logo-text);
+  transition: background var(--transition-dur-and-func);
+
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+  }
+}
+.footer-social-icon {
+  fill: currentColor;
+}
+
+.subscribe {
+  margin-left: auto;
+}
+
+.form-footer {
+  display: flex;
+}
+.footer-mailing {
+  margin-right: 12px;
+}
+.user-mailingList-input {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  width: 358px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 15px;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.footer-button {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  cursor: pointer;
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
+
+  &:focus,
+  &:hover {
+    background: var(--hidden-btn-hero-color);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+  }
+}
+
+.icon-sign-up {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
