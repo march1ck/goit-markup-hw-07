@@ -1,7 +1,7 @@
 body {
   background-color: #ffffff;
   color: var(--primary-color-text);
-  font-family: "Roboto", sans-serif;
+  font-family: $fontPrimary;
   letter-spacing: 0.03em;
 }
 .list {

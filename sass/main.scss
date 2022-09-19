@@ -1,7 +1,8 @@
 @import "./utils/variables";
 @import "./utils/visually-hidden";
-@import "./mixins/mixin";
-@import "./placeholders/placeholders";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+
 
 @import "./base/common";
 @import "./base/container";
@@ -9,6 +10,8 @@
 
 @import "./components/logo";
 @import "./components/page-header-container";
+@import "./components/menu";
+@import "./components/auth-nav";
 @import "./components/title";
 @import "./components/backdrop";
 @import "./components/modal";

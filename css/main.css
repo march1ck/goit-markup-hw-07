@@ -43,7 +43,7 @@
 body {
   background-color: #ffffff;
   color: var(--primary-color-text);
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
 
@@ -85,7 +85,7 @@ ol {
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -96,6 +96,86 @@ ol {
 .page-header-container {
   display: flex;
   align-items: center;
+}
+
+.menu {
+  display: flex;
+  column-gap: 50px;
+}
+
+.menu__link {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color-text);
+  line-height: 1.1;
+  padding: 32px 0px;
+  transition: color var(--transition-dur-and-func);
+}
+.menu__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform var(--transition-dur-and-func);
+}
+.menu__link:hover::after, .menu__link:focus::after {
+  transform: scaleX(1);
+}
+
+.menu__link--current {
+  color: var(--accent-color);
+}
+.menu__link--current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  transform: scaleX(1);
+  transition: transform var(--transition-dur-and-func);
+}
+
+.auth-nav {
+  display: flex;
+  column-gap: 50px;
+}
+
+.auth-nav--margin-left {
+  margin-left: auto;
+}
+
+.auth-nav__icon {
+  display: flex;
+  align-items: center;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.auth-nav__link {
+  display: flex;
+  align-items: center;
+  padding: 32px 0px;
+  color: var(--primary-color-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  transition: color var(--transition-dur-and-func);
+}
+.auth-nav__link:hover, .auth-nav__link:focus {
+  color: var(--accent-color);
 }
 
 .title {
@@ -308,103 +388,16 @@ ol {
   align-items: baseline;
 }
 
-.logo__second-part_black {
+.logo__second-part--black {
   color: var(--studio-color-text);
 }
 
-.logo_margin-right {
+.logo--margin-right {
   margin-right: 93px;
-}
-
-.menu__link.current {
-  color: var(--accent-color);
-}
-
-.menu {
-  display: flex;
-  column-gap: 50px;
-}
-
-.menu__link {
-  position: relative;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: var(--secondary-color-text);
-  line-height: 1.1;
-  padding: 32px 0px;
-  transition: color var(--transition-dur-and-func);
-}
-.menu__link::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  transform: scaleX(0);
-  transition: transform var(--transition-dur-and-func);
-}
-.menu__link:hover::after, .menu__link:focus::after {
-  transform: scaleX(1);
-}
-
-.menu__link.current::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  transform: scaleX(1);
-  transition: transform var(--transition-dur-and-func);
 }
 
 .page-nav :hover,
 .page-nav :focus {
-  color: var(--accent-color);
-}
-
-.auth-nav__icon-mail {
-  display: flex;
-  align-items: center;
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.auth-nav__icon-tel {
-  display: flex;
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.auth-nav {
-  display: flex;
-  column-gap: 50px;
-}
-
-.auth-nav_margin_left {
-  margin-left: auto;
-}
-
-.auth-nav__link {
-  display: flex;
-  align-items: center;
-  padding: 32px 0px;
-  color: var(--primary-color-text);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  transition: color var(--transition-dur-and-func);
-}
-.auth-nav__link:hover, .auth-nav__link:focus {
   color: var(--accent-color);
 }
 
@@ -723,7 +716,7 @@ ol {
   margin-bottom: 20px;
 }
 
-.logo__second-part_white {
+.logo__second-part--white {
   color: var(--hero-logo-text);
 }
 
@@ -747,7 +740,7 @@ ol {
   transition: color var(--transition-dur-and-func);
 }
 
-.footer__socials_margin-left {
+.footer__socials--margin-left {
   margin-left: 70px;
 }
 
@@ -784,7 +777,7 @@ ol {
 }
 
 .footer-mailing__input {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   display: block;
   width: 358px;
   height: 50px;
@@ -801,7 +794,7 @@ ol {
 }
 
 .footer-button {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   display: flex;
   position: relative;
   font-size: 16px;

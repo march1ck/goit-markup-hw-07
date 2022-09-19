@@ -8,7 +8,7 @@
   margin-bottom: 20px;
 }
 
-.logo__second-part_white {
+.logo__second-part--white {
   color: var(--hero-logo-text);
 }
 
@@ -30,7 +30,7 @@
   transition: color var(--transition-dur-and-func);
 }
 
-.footer__socials_margin-left {
+.footer__socials--margin-left {
   margin-left: 70px;
 }
 .footer-socials__title {
@@ -66,7 +66,7 @@
 }
 
 .footer-mailing__input {
-  font-family: "Roboto", sans-serif;
+  font-family: $fontPrimary;
   display: block;
   width: 358px;
   height: 50px;
@@ -83,7 +83,7 @@
 }
 
 .footer-button {
-  font-family: "Roboto", sans-serif;
+  font-family:  $fontPrimary;
   display: flex;
   position: relative;
   @include font(16px, 700, 0.06em);
