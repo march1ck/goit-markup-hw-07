@@ -1,18 +1,21 @@
-.section.about {
+.title_margin-bottom{
+  margin-bottom: 50px;
+}
+.about {
   padding-top: 0px;
 }
-.examples {
+.example {
   display: flex;
   column-gap: 30px;
 }
-.icon-example {
+.example__icon{
   display: block;
   max-width: 100%;
 }
-.image-text {
+.example__title{
   position: relative;
 }
-.over-text-works {
+.example__over-text {
   position: absolute;
   left: 0;
   bottom: 0;

@@ -1,54 +1,49 @@
-.footer {
+.page-footer {
   background-color: var(--secondary-back-color);
   padding-top: 60px;
   padding-bottom: 60px;
-
-  .logo {
-    display: inline-block;
-    margin-bottom: 30px;
-    margin-right: 0;
-  }
+}
+.logo__margin-bottom {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
-.logo-footer {
+.logo__second-part_white {
   color: var(--hero-logo-text);
 }
-.footer-item:not(:last-child) {
+
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.location {
+.address__link {
   color: var(--hero-logo-text);
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   transition: color var(--transition-dur-and-func);
 }
-.contacts {
+.address__contacts {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   transition: color var(--transition-dur-and-func);
 }
-.join-title {
+
+.footer__socials_margin-left {
+  margin-left: 70px;
+}
+.footer-socials__title {
   color: var(--hero-logo-text);
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-.footer-social {
-  margin-left: 70px;
-}
-.footer-social-list {
+.footer-socials__list {
   display: flex;
   column-gap: 10px;
 }
-.footer-social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
+.footer-socials__link {
+  @extend %socials;
   background: rgba(255, 255, 255, 0.1);
   color: var(--hero-logo-text);
   transition: background var(--transition-dur-and-func);
@@ -58,7 +53,7 @@
     background: var(--accent-color);
   }
 }
-.footer-social-icon {
+.footer-social__icon {
   fill: currentColor;
 }
 
@@ -69,10 +64,8 @@
 .form-footer {
   display: flex;
 }
-.footer-mailing {
-  margin-right: 12px;
-}
-.user-mailingList-input {
+
+.footer-mailing__input {
   font-family: "Roboto", sans-serif;
   display: block;
   width: 358px;
@@ -80,6 +73,7 @@
   font-size: 16px;
   line-height: 1.25;
   padding-left: 15px;
+  margin-right: 12px;
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
@@ -92,12 +86,9 @@
   font-family: "Roboto", sans-serif;
   display: flex;
   position: relative;
-  font-weight: 700;
-  font-size: 16px;
+  @include font(16px, 700, 0.06em);
+  @extend %button;
   line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: var(--accent-color);
   border-radius: 4px;
   border: none;
   width: 200px;
@@ -116,7 +107,7 @@
   }
 }
 
-.icon-sign-up {
+.footer-button__icon {
   position: absolute;
   right: 35px;
   top: 15px;
